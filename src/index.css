@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 210 30% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 210 30% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 30% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 207 100% 42%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 30% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 30% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 207 100% 42%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 30% 20%;
+    --input: 210 30% 20%;
+    --ring: 207 100% 42%;
+
+    --radius: 0.75rem;
+
+    /* Windows 11 specific tokens */
+    --win-taskbar: 210 30% 10%;
+    --win-taskbar-hover: 210 30% 15%;
+    --win-glass: 210 30% 15%;
+    --win-start-bg: 210 30% 12%;
+    --win-desktop: 210 40% 5%;
+    
+    /* Shadows */
+    --shadow-window: 0 8px 32px rgba(0, 0, 0, 0.4);
+    --shadow-popup: 0 4px 16px rgba(0, 0, 0, 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
